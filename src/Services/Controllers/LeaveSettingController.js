@@ -6,7 +6,9 @@ module.exports.CreateActivity = async (req, res) => {
     const config_sequelize = req.config_sequelize;
     const login_user = req.login_user;
     const activity_details = req.body;
+
     let changes = "sdfsdgdfhj" 
+
     activity_details.created_by = login_user.user_id;
 
     const BssActivityModel = await BssActivity(config_sequelize);
