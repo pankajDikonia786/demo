@@ -5,6 +5,7 @@ const { BssActivity, BssTravelMode, BssLeaveRejectReasons,BssStudentHost, BssStu
 module.exports.CreateActivity = async (req, res) => {
     const config_sequelize = req.config_sequelize;
     const login_user = req.login_user;
+    ////////////////////////////////////////////////// commit cooent
     const activity_details = req.body;
     activity_details.created_by = login_user.user_id;
 
