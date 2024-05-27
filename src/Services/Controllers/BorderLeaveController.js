@@ -14,6 +14,7 @@ module.exports.ApplyBorderLeave = async (req, res) => {
             parent_id: body.parent_id || null,
             created_by: login_user.user_id
         };
+        console.log("hllo world")
 
         const BssBorderLeavesModel = await BssBorderLeaves(config_sequelize)
         const response = await BssBorderLeavesModel.create(border_leave_details)
